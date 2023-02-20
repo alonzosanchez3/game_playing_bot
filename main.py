@@ -7,11 +7,11 @@ options.add_experimental_option('detach', True)
 
 
 driver = webdriver.Chrome(options=options)
-driver.get('https://en.wikipedia.org/wiki/Main_Page')
+driver.get('http://secure-retreat-92358.herokuapp.com/')
 
-search = driver.find_element(By.NAME, value='search')
-search.send_keys('Python')
-search.send_keys(Keys.ENTER)
+first_name = driver.find_element(By.NAME, 'fName')
+first_name.send_keys('Alonzo')
+
 # print(article_count.text)
 
 # all_portals = driver.find_element(By.LINK_TEXT, 'All portals')
