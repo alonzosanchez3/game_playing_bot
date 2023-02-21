@@ -11,6 +11,9 @@ driver.get('http://secure-retreat-92358.herokuapp.com/')
 
 first_name = driver.find_element(By.NAME, 'fName')
 first_name.send_keys('Alonzo')
+last_name = driver.find_element(By.NAME, 'lName')
+last_name.send_keys('Sanchez')
+email = driver.find_element(By)
 
 # print(article_count.text)
 
