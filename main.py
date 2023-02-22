@@ -13,7 +13,9 @@ first_name = driver.find_element(By.NAME, 'fName')
 first_name.send_keys('Alonzo')
 last_name = driver.find_element(By.NAME, 'lName')
 last_name.send_keys('Sanchez')
-email = driver.find_element(By)
+email = driver.find_element(By.NAME, 'email')
+email.send_keys('alonzosanchez3@gmail.com')
+
 
 # print(article_count.text)
 
