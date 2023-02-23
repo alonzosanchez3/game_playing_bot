@@ -15,6 +15,8 @@ last_name = driver.find_element(By.NAME, 'lName')
 last_name.send_keys('Sanchez')
 email = driver.find_element(By.NAME, 'email')
 email.send_keys('alonzosanchez3@gmail.com')
+sign_up = driver.find_element(By.XPATH, '/html/body/form/button')
+sign_up.click()
 
 
 # print(article_count.text)
