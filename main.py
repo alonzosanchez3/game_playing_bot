@@ -7,16 +7,11 @@ options.add_experimental_option('detach', True)
 
 
 driver = webdriver.Chrome(options=options)
-driver.get('http://secure-retreat-92358.herokuapp.com/')
+driver.get('https://orteil.dashnet.org/experiments/cookie/')
 
-first_name = driver.find_element(By.NAME, 'fName')
-first_name.send_keys('Alonzo')
-last_name = driver.find_element(By.NAME, 'lName')
-last_name.send_keys('Sanchez')
-email = driver.find_element(By.NAME, 'email')
-email.send_keys('alonzosanchez3@gmail.com')
-sign_up = driver.find_element(By.XPATH, '/html/body/form/button')
-sign_up.click()
+cookie = driver.find_element(By.ID, 'cookie')
+for i in range(0, 50):
+  cookie.click()
 
 
 # print(article_count.text)
