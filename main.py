@@ -6,11 +6,11 @@ options.add_experimental_option('detach', True)
 
 
 driver = webdriver.Chrome(options=options)
-driver.get('https://www.python.org')
+driver.get('https://en.wikipedia.org/wiki/Main_Page')
 
-dates = driver.find_elements(By.CSS_SELECTOR, value='.event-widget .shrubbery .menu li time')
-for date in dates:
-  print(date.text)
+article_count = driver.find_element(By.CSS_SELECTOR, value='#articlecount a')
+article_count.click()
+print(article_count.text)
 
 # price_dollar = driver.find_element(By.CLASS_NAME, value='a-price-whole')
 # price_cents = driver.find_element(By.CLASS_NAME, value='a-price-fraction')
